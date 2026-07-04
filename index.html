@@ -145,6 +145,15 @@
       background: #ffffff;
     }
 
+    .figure-frame video {
+      width: 100%;
+      height: auto;
+      border: none;
+      border-radius: 10px;
+      display: block;
+      background: #0f172a;
+    }
+
     .figure-stack {
       display: flex;
       flex-direction: column;
@@ -223,7 +232,9 @@
     Required videos.
     Put these files in: static/videos/
 
-    Video.mp4
+    Video1.mp4
+    Video2.mp4
+    Video3.mp4
     carousel1.mp4
     carousel2.mp4
     carousel3.mp4
@@ -298,7 +309,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body pt-2">
         <video id="teaser" autoplay muted loop controls playsinline>
-          <source src="static/videos/Video.mp4" type="video/mp4">
+          <source src="static/videos/Video1.mp4" type="video/mp4">
         </video>
 
         <h2 class="subtitle has-text-centered text-muted" style="margin-top: 1rem; font-size: 1.08rem; line-height: 1.55;">
@@ -483,6 +494,11 @@
               <div class="paper-card">
                 <div class="card-body">
                   <h3 class="title is-4">Motion repeatability</h3>
+                  <div class="figure-frame" style="margin-bottom: 1rem;">
+                    <video controls muted loop playsinline preload="metadata">
+                      <source src="static/videos/Video2.mp4" type="video/mp4">
+                    </video>
+                  </div>
                   <div class="figure-frame">
                     <img src="static/images/Figure12.png" alt="Repeatability results for five predefined motion tests">
                   </div>
@@ -497,6 +513,11 @@
               <div class="paper-card">
                 <div class="card-body">
                   <h3 class="title is-4">Force capacity</h3>
+                  <div class="figure-frame" style="margin-bottom: 1rem;">
+                    <video controls muted loop playsinline preload="metadata">
+                      <source src="static/videos/Video3.mp4" type="video/mp4">
+                    </video>
+                  </div>
                   <div class="figure-frame">
                     <img src="static/images/Figure13.png" alt="Measured fingertip force capacity under a constant-current command">
                   </div>
